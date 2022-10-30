@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="section"> 
+        <div class="blurry-bg"></div>
+        <div class="container">
+            <div class="main-div1">
+                <div >
+                    <h3 class="same home" id="homemsg">HOME</h3>
+                </div>
+                <div class="same clock">
+                    <span id="hour">00</span>
+                    <span id="min">00</span>
+                    <span id="sec">34</span>
+                    <button id="start">Start</button>
+                    <button id="reset">Resest</button>
+                </div>
+                <div >
+                    <h3 class="same guest" id="guestmsg">GUEST</h3>
+                </div>
+            </div>
+
+            <div class="main-div2">
+                <div class="card">
+                    <div class="same num" id="homeNum">0</div>
+                    <button class="btn1" onclick="homeInc1()">+1</button>
+                    <button class="btn2" onclick="homeInc2()">+2</button>
+                    <button class="btn3" onclick="homeInc3()">+3</button>
+                </div>
+
+                <div class="center-card">
+                   
+                    <div class="card">
+                        <h3>fouls</h3>
+                        <div class="same num" id="homeFoul">0</div>
+                        <button class="foul" onclick="homeFoulInc()">+</button>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="h3-period">period</h3>
+                        <div class="same num" id="period">0</div>
+                        <button class="periodbtn" onclick="periodInc()">+</button>
+                    </div>
+                    <div class="card">
+                        <h3>fouls</h3>
+                        <div class="same num" id="guestFoul">0</div>
+                        <button class="foul" onclick="guestFoulInc()">+</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="same num" id="guestNum">0</div>
+                    <button class="btn1" onclick="guestInc1()">+1</button>
+                    <button class="btn2" onclick="guestInc2()">+2</button>
+                    <button class="btn3" onclick="guestInc3()">+3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="index.js"></script>
+    </body>
+</html>
